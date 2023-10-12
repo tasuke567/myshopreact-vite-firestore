@@ -9,5 +9,9 @@ export default defineConfig({
       src: "/src",
       components: "/src/components",
     },
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+  },
+  build: {
+    outDir: "./dist",
   },
 });

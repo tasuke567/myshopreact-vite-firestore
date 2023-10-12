@@ -4,7 +4,26 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Auth } from "./components/auth";
 import { db } from "./config/firebase";
-import { collection, getDocs, addDoc ,deleteDoc,doc} from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Home from "./components/Home";
+import Admin from "./components/Admin";
+import Thx from "./components/Thx";
+import Shop from "./components/Shop";
+import Checkout from "./components/Checkout";
+import Cart from "./components/Cart";
+import Index from "./components/index";
 
 function App() {
   const [ProductsList, setProducts] = useState([]);
@@ -30,9 +49,8 @@ function App() {
   };
 
   const deleteProducts = async (id) => {
-    const ProductDoc = doc(db, "Products", id )
+    const ProductDoc = doc(db, "Products", id);
     await deleteDoc(ProductDoc);
-
   };
 
   useEffect(() => {
@@ -53,7 +71,18 @@ function App() {
   };
   return (
     <>
-      <div>
+      <Router>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/thx" element={<Thx />} />
+          <Route path="/" element={<Index />} />
+        </Routes>
+      </Router>
+      {/* <div>
         <Auth />
         <div>
           <input
@@ -83,11 +112,13 @@ function App() {
               <h1>{Products.name}</h1>
               <p> Price : {Products.price}</p>
 
-              <button onClick={()=> deleteProducts(Products.id)}>Delete Products</button>
+              <button onClick={() => deleteProducts(Products.id)}>
+                Delete Products
+              </button>
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
