@@ -216,23 +216,24 @@ export function Shop() {
                   <img src="./../images/user.svg" />
                 </a>
               </li>
+            
               <li>
                 <a className="nav-link" href="/cart">
                   <img src="./../images/cart.svg" />
                 </a>
               </li>
-              <ul>
-                <li>
-                  <button
-                    className="btn btn-danger"
-                    onClick={() => {
-                      handleSignOut();
-                    }}
-                  >
-                    Sign Out
-                  </button>
-                </li>
-              </ul>
+            </ul>
+            <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+              <li>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => {
+                    handleSignOut();
+                  }}
+                >
+                  Sign Out
+                </button>
+              </li>
             </ul>
           </div>
         </div>
