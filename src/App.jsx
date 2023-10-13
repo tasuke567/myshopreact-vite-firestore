@@ -71,7 +71,9 @@ function App() {
   };
   return (
     <>
-      <Router>
+      
+          
+      {/* <Router>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/admin" element={<Admin />} />
@@ -79,8 +81,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/thx" element={<Thx />} />
-          <Route path="/" element={<Index />
-          <div>
+          <Route path="/" element={<Index /> */}
+            <div>
         <Auth />
         <div>
           <input
@@ -119,7 +121,6 @@ function App() {
       </div>} />
         </Routes>
       </Router>
-      {/*  */}
     </>
   );
 }
