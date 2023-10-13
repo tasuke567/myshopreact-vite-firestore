@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyAyAz42eDHUGqbr85JjdqFUy6KZHL61HVY",
   authDomain: "myshopwey.firebaseapp.com",
   databaseURL:
