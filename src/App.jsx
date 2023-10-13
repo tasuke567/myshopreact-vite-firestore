@@ -58,9 +58,65 @@ function App() {
   ]);
 
   return (
+<<<<<<< HEAD
     <AuthContext>
       <RouterProvider router={router}></RouterProvider>
     </AuthContext>
+=======
+    <>
+      
+          
+      {/* <Router>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/thx" element={<Thx />} />
+          <Route path="/" element={<Index /> }
+          />
+        </Routes>
+      </Router>*/}
+            <div>
+        <Auth />
+        <div>
+          <input
+            placeholder="Name..."
+            onChange={(e) => setProductsName(e.target.value)}
+          />
+
+          <input
+            placeholder="Price..."
+            onChange={(e) => setProductsPrice(Number(e.target.value))}
+          />
+
+          <label>
+            <input
+              type="checkbox"
+              checked={newStock}
+              onChange={(e) => setnewStock(e.target.checked)}
+            />
+            On Stock
+          </label>
+
+          <button onClick={onSubmitProducts}>Submit Products</button>
+        </div>
+        <div>
+          {ProductsList.map((Products) => (
+            <div>
+              <h1>{Products.name}</h1>
+              <p> Price : {Products.price}</p>
+
+              <button onClick={() => deleteProducts(Products.id)}>
+                Delete Products
+              </button>
+            </div>
+          ))}
+        </div>
+      </div> 
+    </>
+>>>>>>> a80ad222729d6df7e73f669bbf33b9221fe61d1b
   );
 }
 
