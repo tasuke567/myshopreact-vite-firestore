@@ -81,7 +81,10 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/thx" element={<Thx />} />
-          <Route path="/" element={<Index /> */}
+          <Route path="/" element={<Index /> }
+          />
+        </Routes>
+      </Router>*/}
             <div>
         <Auth />
         <div>
@@ -118,9 +121,7 @@ function App() {
             </div>
           ))}
         </div>
-      </div>} />
-        </Routes>
-      </Router>
+      </div> 
     </>
   );
 }
