@@ -4,6 +4,8 @@ import { Signin } from "./Routes/Signin";
 import { Signup } from "./Routes/Signup";
 import { Home } from "./Routes/Home";
 import { Shop } from "./Routes/Shop";
+import { Admin } from "./Routes/Admin";
+import { Cart } from "./Routes/Cart";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthContext } from "./Context/AuthContext";
 import { Protected } from "./Routes/Protected";
@@ -43,7 +45,22 @@ function App() {
       element: (
         <Protected>
           <Shop />
-          
+        </Protected>
+      ),
+    },
+    {
+      path: "/admin",
+      element: (
+        <Protected>
+          <Admin />
+        </Protected>
+      ),
+    },
+    {
+      path: "/cart",
+      element: (
+        <Protected>
+          <Cart />
         </Protected>
       ),
     },
