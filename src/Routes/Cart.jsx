@@ -164,7 +164,7 @@ export function Cart() {
                       <tr>
                         <td className="product-thumbnail">
                           <img
-                            src="public/images/Samsung Galaxy S23 Ultra.jpg"
+                            src="/images/Samsung Galaxy S23 Ultra.jpg"
                             alt="Image"
                             className="img-fluid"
                           />
