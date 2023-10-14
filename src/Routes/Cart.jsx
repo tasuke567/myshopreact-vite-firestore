@@ -298,8 +298,8 @@ export function Cart() {
         {/* Start Footer Section */}
         <footer className="footer-section">
           <div className="container relative">
-            <div className="sofa-img">
-              <img src="public/images/Apple-iPhone-15-Pro-Lineup-PNG.png" alt="Image" className="img-fluid" />
+            <div className="">
+              <img src="/images/Apple-iPhone-15-Pro-Lineup-PNG.png" alt="Image" className="img-fluid" />
             </div>
             
             <div className="row g-5 mb-5">
