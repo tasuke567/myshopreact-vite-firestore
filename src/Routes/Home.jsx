@@ -86,8 +86,13 @@ export function Home() {
             <div className="row justify-content-between">
               <div className="col-lg-5">
                 <h2 className="welcome__video-headline">
-                  <span className="visuallyhidden">iPhone 15 Pro</span>
-                  <figure className="welcome__video-headline-logo">
+                  <span className=".text-light" style={{ color: "whitesmoke" }}>
+                    iPhone 15 Pro MAX
+                  </span>
+                  <figure
+                    className=".text-light"
+                    style={{ color: "whitesmoke" }}
+                  >
                     ไทเทเนียม สุดแกร่ง สุดเบา สุดโปร
                   </figure>
                 </h2>

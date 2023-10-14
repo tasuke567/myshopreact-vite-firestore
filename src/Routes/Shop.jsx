@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import { getFirestore, doc, getDocs, collection } from "firebase/firestore";
 export function Shop() {
+  
+
   const db = getFirestore();
   const ProductsRef = collection(db, "Products");
   useState(async () => {
@@ -410,20 +412,7 @@ export function Shop() {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-8">
-              <div className="row links-wrap">
-                <div className="col-6 col-sm-6 col-md-3">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="#">About us</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div className="border-top copyright">
             <div className="row pt-4">

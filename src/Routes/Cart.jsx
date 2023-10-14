@@ -299,7 +299,7 @@ export function Cart() {
         <footer className="footer-section">
           <div className="container relative">
             <div className="sofa-img">
-              <img src="images/sofa.png" alt="Image" className="img-fluid" />
+              <img src="public/images/Apple-iPhone-15-Pro-Lineup-PNG.png" alt="Image" className="img-fluid" />
             </div>
             
             <div className="row g-5 mb-5">
@@ -322,20 +322,7 @@ export function Cart() {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-8">
-                <div className="row links-wrap">
-                  <div className="col-6 col-sm-6 col-md-3">
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="#">About us</a>
-                      </li>
-                      <li>
-                        <a href="#">Contact us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div className="border-top copyright">
               <div className="row pt-4">
