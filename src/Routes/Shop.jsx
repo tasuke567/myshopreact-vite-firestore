@@ -141,7 +141,7 @@ export function Shop() {
       productList[i].innerHTML = `
   <img src="./../images/${productName.textContent}.jpg" class="img-fluid product-thumbnail" id="pd${i}">
     <h3>${productName.textContent}</h3>
-    <p>${productPrice.textContent}</p>
+    <p>${productPrice.textContent}฿</p>
    
    <span class="icon-cross">
                 <img src="./../images/cross.svg" class="img-fluid">

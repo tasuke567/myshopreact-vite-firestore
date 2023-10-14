@@ -87,7 +87,7 @@ export function Home() {
               <div className="col-lg-5">
                 <h2 className="welcome__video-headline">
                   <span className=".text-light" style={{ color: "whitesmoke" }}>
-                    iPhone 15 Pro MAX
+                    IPhone 15 Pro MAX
                   </span>
                   <figure
                     className=".text-light"
