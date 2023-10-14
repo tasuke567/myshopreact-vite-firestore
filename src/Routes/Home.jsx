@@ -227,7 +227,7 @@ export function Home() {
                 <div className="product-item-sm d-flex">
                   <div className="thumbnail">
                     <img
-                      src="images/download.webp"
+                      src="public/images/Samsung Galaxy S23 Ultra.jpg"
                       alt="Image"
                       className="img-fluid"
                     />
