@@ -128,7 +128,7 @@ export function Home() {
               {/* End Column 1 */}
               {/* Start Column 2 */}
               <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a className="product-item" href="./src/cart.html">
+                <a className="product-item" href="/cart">
                   <img
                     src="images/Apple-iPhone-15-Pro-Lineup-PNG.png"
                     className="img-fluid product-thumbnail"
@@ -143,7 +143,7 @@ export function Home() {
               {/* End Column 2 */}
               {/* Start Column 3 */}
               <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a className="product-item" href="./src/cart.html">
+                <a className="product-item" href="/cart">
                   <img
                     src="images/th-galaxy-s23-s918-sm-s918blibthl-534856828 (1).png"
                     className="img-fluid product-thumbnail"
@@ -158,7 +158,7 @@ export function Home() {
               {/* End Column 3 */}
               {/* Start Column 4 */}
               <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a className="product-item" href="./src/cart.html">
+                <a className="product-item" href="/cart">
                   <img
                     src="images/download.webp"
                     className="img-fluid product-thumbnail"
@@ -205,7 +205,7 @@ export function Home() {
                 <div className="product-item-sm d-flex">
                   <div className="thumbnail">
                     <img
-                      src="images/th-galaxy-s23-s918-sm-s918blibthl-534856828 (1).png"
+                      src="public/images/Samsung Galaxy S23 Ultra.jpg"
                       alt="Image"
                       className="img-fluid"
                     />
