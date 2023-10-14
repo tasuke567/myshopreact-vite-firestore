@@ -79,7 +79,6 @@ export function Cart() {
       </nav>
       {/* End Header/Navigation */}
       <>
-        
         {/* End Header/Navigation */}
         {/* Start Hero Section */}
         <div className="hero">
@@ -123,7 +122,7 @@ export function Cart() {
                         <td className="product-name">
                           <h2 className="h5 text-black">IPHONE 15 PRO MAX</h2>
                         </td>
-                        <td>$456.00</td>
+                        <td>56,900฿</td>
                         <td>
                           <div
                             className="input-group mb-3 d-flex align-items-center quantity-container"
@@ -155,9 +154,9 @@ export function Cart() {
                             </div>
                           </div>
                         </td>
-                        <td>$456.00</td>
+                        <td>56,900฿</td>
                         <td>
-                          <a href="#" className="btn btn-black btn-sm">
+                          <a href="" className="btn btn-black btn-sm">
                             X
                           </a>
                         </td>
@@ -165,7 +164,7 @@ export function Cart() {
                       <tr>
                         <td className="product-thumbnail">
                           <img
-                            src="./../images/th-galaxy-s23-s918-sm-s918blibthl-534856828 (1).png"
+                            src="public/images/Samsung Galaxy S23 Ultra.jpg"
                             alt="Image"
                             className="img-fluid"
                           />
@@ -175,7 +174,7 @@ export function Cart() {
                             SAMSUNG GALAXY S23 ULTRA
                           </h2>
                         </td>
-                        <td>$999.00</td>
+                        <td>43,990฿</td>
                         <td>
                           <div
                             className="input-group mb-3 d-flex align-items-center quantity-container"
@@ -207,9 +206,9 @@ export function Cart() {
                             </div>
                           </div>
                         </td>
-                        <td>$789.00</td>
+                        <td>43,990฿</td>
                         <td>
-                          <a href="#" className="btn btn-black btn-sm">
+                          <a href="" className="btn btn-black btn-sm">
                             X
                           </a>
                         </td>
@@ -268,7 +267,7 @@ export function Cart() {
                         <span className="text-black">Subtotal</span>
                       </div>
                       <div className="col-md-6 text-right">
-                        <strong className="text-black">$230.00</strong>
+                        <strong className="text-black">100,890฿</strong>
                       </div>
                     </div>
                     <div className="row mb-5">
@@ -276,7 +275,7 @@ export function Cart() {
                         <span className="text-black">Total</span>
                       </div>
                       <div className="col-md-6 text-right">
-                        <strong className="text-black">$230.00</strong>
+                        <strong className="text-black">100,890฿</strong>
                       </div>
                     </div>
                     <div className="row">
@@ -299,9 +298,13 @@ export function Cart() {
         <footer className="footer-section">
           <div className="container relative">
             <div className="">
-              <img src="/images/Apple-iPhone-15-Pro-Lineup-PNG.png" alt="Image" className="img-fluid" />
+              <img
+                src="/images/Apple-iPhone-15-Pro-Lineup-PNG.png"
+                alt="Image"
+                className="img-fluid"
+              />
             </div>
-            
+
             <div className="row g-5 mb-5">
               <div className="col-lg-4">
                 <div className="mb-4 footer-logo-wrap">
@@ -322,7 +325,6 @@ export function Cart() {
                   </li>
                 </ul>
               </div>
-              
             </div>
             <div className="border-top copyright">
               <div className="row pt-4">

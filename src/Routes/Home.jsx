@@ -227,7 +227,7 @@ export function Home() {
                 <div className="product-item-sm d-flex">
                   <div className="thumbnail">
                     <img
-                      src="public/images/Samsung Galaxy S23 Ultra.jpg"
+                      src="public/images/OPPO Find N2 Flip.jpg"
                       alt="Image"
                       className="img-fluid"
                     />

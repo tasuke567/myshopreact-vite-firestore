@@ -134,6 +134,11 @@ export function Shop() {
       const productPrice = productList[i].querySelector("strong");
       productName.textContent = productsWithoutDuplicates[i].name;
       productPrice.textContent = productsWithoutDuplicates[i].price;
+      Array.from(productList)[i].setAttribute("href", "/cart");
+      productList.forEach((productItem) => {
+        productItem.setAttribute("href", "/cart");
+      });
+
       // Display the product name and price in the HTML.
       // You can use any HTML element to display the product name and price.
       // For example, you can use a `div` element, a `paragraph` element, or a `span` element.
@@ -260,7 +265,7 @@ export function Shop() {
           <div className="row">
             {/* Start Column 1 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/download.webp"
                   className="img-fluid product-thumbnail"
@@ -276,7 +281,7 @@ export function Shop() {
             {/* End Column 1 */}
             {/* Start Column 2 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/Find-N3-Flip.jpg"
                   className="img-fluid product-thumbnail"
@@ -291,7 +296,7 @@ export function Shop() {
             {/* End Column 2 */}
             {/* Start Column 3 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/th-galaxy-s23-s918-sm-s918blibthl-534856828 (1).png"
                   className="img-fluid product-thumbnail"
@@ -306,7 +311,7 @@ export function Shop() {
             {/* End Column 3 */}
             {/* Start Column 4 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/iphone-card-40-iphone15prohero-202309_FMT_WHH.jpg"
                   className="img-fluid product-thumbnail"
@@ -321,7 +326,7 @@ export function Shop() {
             {/* End Column 4 */}
             {/* Start Column 1 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/zflip5.jpg"
                   className="img-fluid product-thumbnail"
@@ -336,7 +341,7 @@ export function Shop() {
             {/* End Column 1 */}
             {/* Start Column 2 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/ss22.jpg"
                   className="img-fluid product-thumbnail"
@@ -351,7 +356,7 @@ export function Shop() {
             {/* End Column 2 */}
             {/* Start Column 3 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/download (1).jpg"
                   className="img-fluid product-thumbnail"
@@ -366,7 +371,7 @@ export function Shop() {
             {/* End Column 3 */}
             {/* Start Column 4 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5">
-              <a className="product-item" href="#">
+              <a className="product-item" href="">
                 <img
                   src="public/images/download.jpg"
                   className="img-fluid product-thumbnail"
