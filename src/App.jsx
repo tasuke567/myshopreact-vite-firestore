@@ -9,6 +9,7 @@ import { Cart } from "./Routes/Cart";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthContext } from "./Context/AuthContext";
 import { Protected } from "./Routes/Protected";
+import { ProtectedAdmin } from "./Routes/Protectedadmin";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   getFirestore,
@@ -51,9 +52,9 @@ function App() {
     {
       path: "/admin",
       element: (
-        <Protected>
+        <ProtectedAdmin>
           <Admin />
-        </Protected>
+        </ProtectedAdmin>
       ),
     },
     {

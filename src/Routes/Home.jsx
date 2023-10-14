@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export function Home() {
   const auth = getAuth();
+  // console.log(auth.currentUser.uid);
   async function handleSignOut() {
     try {
       await signOut(auth);
