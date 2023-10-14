@@ -1,78 +1,77 @@
-
 **WeyStore**
 
-**บทนำ**
+**Introduction**
 
-WeyStore เป็นแอปพลิเคชันร้านค้าออนไลน์ที่พัฒนาด้วย React, Vite และ Firebase
+WeyStore is an online store application developed with React, Vite, and Firebase.
 
-แอปพลิเคชันนี้ขายสินค้าอิเล็กทรอนิกส์ประเภทต่างๆ เช่น สมาร์ทโฟน แท็บเล็ต คอมพิวเตอร์ นาฬิกาอัจฉริยะ หูฟัง ลำโพง กล้อง และเครื่องเล่นเกม
+The application sells a variety of electronic products, such as smartphones, tablets, computers, smartwatches, headphones, speakers, cameras, and gaming consoles.
 
-**คุณสมบัติ**
+**Features**
 
-* แสดงรายการสินค้า
-* เพิ่มสินค้าใหม่
-* แก้ไขสินค้าที่มีอยู่
-* ลบสินค้า
-* เพิ่มตะกร้าสินค้า
-* ชำระเงิน
-* ตรวจสอบสถานะคำสั่งซื้อ
+* **Show product list**
+* **Add new product**
+* **Edit existing product**
+* **Delete product**
+* **Add to cart**
+* **Checkout**
+* **Check order status**
 
-**การติดตั้ง**
+**Installation**
 
-1. ติดตั้ง Node.js และ npm
-2. клонโค้ดจาก GitHub
-3. ติดตั้งแพ็กเกจที่จำเป็นด้วยคำสั่งต่อไปนี้:
+1. Install Node.js and npm.
+2. Clone the code from GitHub.
+3. Install the necessary packages with the following command:
 
 ```
 npm install
 ```
 
-4. เริ่มแอปพลิเคชันด้วยคำสั่งต่อไปนี้:
+4. Start the application with the following command:
 
 ```
 npm run dev
 ```
 
-แอปพลิเคชันจะทำงานบนพอร์ต 3000
+The application will run on port 3000.
 
-**การใช้งาน**
+**Usage**
 
-1. เปิดเบราว์เซอร์ของคุณและไปที่ http://localhost:3000
-2. คลิกที่ปุ่ม "เพิ่มสินค้าใหม่" เพื่อเพิ่มสินค้าใหม่
-3. เลือกประเภทสินค้า ป้อนน​​ามสินค้า ราคา และคำอธิบาย
-4. คลิกที่ปุ่ม "บันทึก" เพื่อบันทึกสินค้า
-5. คลิกที่ปุ่ม "รายการสินค้า" เพื่อดูรายการสินค้าทั้งหมด
-6. คลิกที่ปุ่ม "แก้ไข" เพื่อแก้ไขสินค้าที่มีอยู่
-7. คลิกที่ปุ่ม "ลบ" เพื่อลบสินค้า
-8. เพิ่มสินค้าลงในตะกร้าสินค้าโดยคลิกที่ปุ่ม "เพิ่มลงในตะกร้าสินค้า"
-9. ตรวจสอบสถานะคำสั่งซื้อของคุณโดยคลิกที่ปุ่ม "ตรวจสอบสถานะคำสั่งซื้อ"
+1. Open your browser and go to http://localhost:3000.
+2. Click the "Add New Product" button to add a new product.
+3. Select a product category, enter the product name, price, and description.
+4. Click the "Save" button to save the product.
+5. Click the "Product List" button to view all products.
+6. Click the "Edit" button to edit an existing product.
+7. Click the "Delete" button to delete a product.
+8. Add a product to your cart by clicking the "Add to Cart" button.
+9. Check the status of your order by clicking the "Check Order Status" button.
 
-**การทดสอบ**
+**Testing**
 
-1. เปิดเบราว์เซอร์ของคุณและไปที่ http://localhost:3000/test
-2. คลิกที่ปุ่ม "เริ่มการทดสอบ" เพื่อเริ่มการทดสอบ
+1. Open your browser and go to http://localhost:3000/test.
+2. Click the "Start Testing" button to start the tests.
 
-**การช่วยเหลือ**
+**Support**
 
-หากคุณพบปัญหา โปรดเปิดปัญหาบน GitHub
+If you encounter any problems, please open an issue on GitHub.
 
-**ใบอนุญาต**
+**License**
 
-WeyStore เผยแพร่ภายใต้ใบอนุญาต MIT
+WeyStore is licensed under the MIT License.
 
-**ตัวอย่าง**
+**Examples**
 
-ต่อไปนี้เป็นตัวอย่างของรายการสินค้า:
+Here are some examples of product listings:
 
 
-สินค้า | ราคา | คำอธิบาย
+Product | Price | Description
 ------- | -------- | --------
-iPhone 14 Pro Max | 39,990 บาท | สมาร์ทโฟนระดับพรีเมียมจาก Apple ด้วยหน้าจอ Super Retina XDR ขนาด 6.7 นิ้ว ชิป A16 Bionic และระบบกล้องหลัง 4 ตัว
-Samsung Galaxy S23 Ultra | 35,990 บาท | สมาร์ทโฟนเรือธงจาก Samsung ด้วยหน้าจอ AMOLED ขนาด 6.8 นิ้ว ชิป Snapdragon 8 Gen 2 และระบบกล้องหลัง 4 ตัว
-MacBook Pro 14 นิ้ว | 59,990 บาท | แล็ปท็อประดับสูงจาก Apple ด้วยชิป M2 Pro หน้าจอ Liquid Retina XDR ขนาด 14 นิ้ว และกล้อง FaceTime HD 1080p
-iPad Pro 12.9 นิ้ว | 39,990 บาท | แท็บเล็ตระดับสูงจาก Apple ด้วยชิป M2 หน้าจอ Liquid Retina XDR ขนาด 12.9 นิ้ว และกล้อง TrueDepth 12MP
-Apple Watch Series 8 | 14,990 บาท | นาฬิกาอัจฉริยะจาก Apple ด้วยชิป S8 หน้าจอ Retina LTPO แบบ always-on และเซ็นเซอร์วัดอุณหภูมิ
-Sony WH-1000XM5 | 16,990 บาท | หูฟังตัดเสียงรบกวนจาก Sony ด้วยเทคโนโลยี Dual Noise Sensor และระบบประมวลผลเสียง QN1
-Bose QuietComfort 45 | 14,990 บาท | หูฟังตัดเสียงรบกวนจาก Bose ด้วยเทคโนโลยี Acoustic Noise Cancelling 2 และระบบ Active EQ
+iPhone 14 Pro Max | 39,990 Baht | Premium smartphone from Apple with a 6.7-inch Super Retina XDR display, A16 Bionic chip, and a 4-camera system.
+Samsung Galaxy S23 Ultra | 35,990 Baht | Flagship smartphone from Samsung with a 6.8-inch AMOLED display, Snapdragon 8 Gen 2 chip, and a 4-camera system.
+MacBook Pro 14-inch | 59,990 Baht | High-end laptop from Apple with an M2 Pro chip, a 14-inch Liquid Retina XDR display, and a 1080p FaceTime HD camera.
+iPad Pro 12.9-inch | 39,990 Baht | High-end tablet from Apple with an M2 chip, a 12.9-inch Liquid Retina XDR display, and a 12MP TrueDepth camera.
+Apple Watch Series 8 | 14,990 Baht | Smartwatch from Apple with an S8 chip, an always-on Retina LTPO display, and a temperature sensor.
+Sony WH-1000XM5 | 16,990 Baht | Noise-canceling headphones from Sony with Dual Noise Sensor technology and QN1 audio processing system.
+Bose QuietComfort 45 | 14,990 Baht | Noise-canceling headphones from Bose with Acoustic Noise Cancelling 2 technology and Active EQ system.
 
 
