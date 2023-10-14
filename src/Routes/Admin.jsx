@@ -21,9 +21,7 @@ import {
   updateDoc,
 } from "firebase/firestore";
 
-
 export function Admin() {
-  
   const storage = getStorage();
   const storageRef = ref(storage);
 
@@ -84,26 +82,41 @@ export function Admin() {
   useState(async () => {
     const docsSnap = await getDocs(ProductsRef);
     docsSnap.forEach((doc) => {});
-    const table = await document.getElementById("table");
+    const table = document.getElementById("table");
 
-    async function getProducts(db) {
+    function getProducts(db) {
       const empCol = collection(db, "Products");
-      const empSnapshot = await getDocs(empCol);
+      const empSnapshot = getDocs(empCol);
       return empSnapshot;
     }
-    const form = document.getElementById("addForm1");
-    const btnaddd = document.getElementById("btnadda");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
+
+    async function addProduct() {
+      const form = document.getElementById("addForm1");
+
       try {
         const docRef = await addDoc(collection(db, "Products"), {
           name: form.namea.value,
           price: form.pricea.value,
         });
+
         alert("บันทึกข้อมูลเรียบร้อย");
-        form.namea.value = "";
-        form.pricea.value = "";
+        document.getElementById("namea").value = "";
+        document.getElementById("pricea").value = "";
+
         console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+      useEffect(() => {
+        window.location.reload();
+      }, []);
+    }
+    const form = document.getElementById("addForm1");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      try {
+        addProduct();
       } catch (e) {
         console.error("Error adding document: ", e);
       }
@@ -240,9 +253,6 @@ export function Admin() {
     try {
       await signOut(auth);
       <Link to="/Signin" />;
-      if (auth.currentUser.uid === "Vf9dGNJPBNdshpxZzTTrg0SOxxl1") {
-        setAdmin(true);
-      }
     } catch (error) {
       console.log(error);
     }
@@ -251,70 +261,69 @@ export function Admin() {
     <>
       Admin?
       <h3>Welcome Admin</h3>
-    <link rel="shortcut icon" href="./images/favicon.png" />
-    <title>WEY_STORE</title>
-    {/* Start Header/Navigation */}
-    <nav
-      className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
-      arial-label="Furni navigation bar"
-    >
-      <div className="container">
-        <a className="navbar-brand" href="">
-          WEY<span>.</span>
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsFurni"
-          aria-controls="navbarsFurni"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarsFurni">
-          <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-            <li className="nav-item active">
-              <a className="nav-link" href="">
-                <Link to="/home">Home</Link>
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="">
-                <Link to="/shop">Shop</Link>
-              </a>
-            </li>
-          </ul>
-          <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-            <li>
-              <a className="nav-link" href="/admin">
-                <img src="./../images/user.svg" />
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="/cart">
-                <img src="./../images/cart.svg" />
-              </a>
-            </li>
-            <ul>
+      <link rel="shortcut icon" href="./images/favicon.png" />
+      <title>WEY_STORE</title>
+      {/* Start Header/Navigation */}
+      <nav
+        className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
+        arial-label="Furni navigation bar"
+      >
+        <div className="container">
+          <a className="navbar-brand" href="">
+            WEY<span>.</span>
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsFurni"
+            aria-controls="navbarsFurni"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className="collapse navbar-collapse" id="navbarsFurni">
+            <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+              <li className="nav-item active">
+                <a className="nav-link" href="">
+                  <Link to="/home">Home</Link>
+                </a>
+              </li>
               <li>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => {
-                    handleSignOut();
-                  }}
-                >
-                  Sign Out
-                </button>
+                <a className="nav-link" href="">
+                  <Link to="/shop">Shop</Link>
+                </a>
               </li>
             </ul>
-          </ul>
+            <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+              <li>
+                <a className="nav-link" href="/admin">
+                  <img src="./../images/user.svg" />
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="/cart">
+                  <img src="./../images/cart.svg" />
+                </a>
+              </li>
+              <ul>
+                <li>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => {
+                      handleSignOut();
+                    }}
+                  >
+                    Sign Out
+                  </button>
+                </li>
+              </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    {/* End Header/Navigation */}
-
+      </nav>
+      {/* End Header/Navigation */}
       <title>WEY STORE</title>
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -323,7 +332,6 @@ export function Admin() {
         crossOrigin="anonymous"
       />
       <link rel="shortcut icon" href="./../images/favicon.png" />
-
       <main className="container-fluid">
         <div className="container my-3">
           <a className="nav-link" href="/home">
@@ -424,7 +432,7 @@ export function Admin() {
                       className="m-2"
                       type="text"
                       name="namea"
-                      id="nameInput"
+                      id="nameInputa"
                     />
                     <br />
                     <label className="m-2" htmlFor="price">
@@ -434,7 +442,7 @@ export function Admin() {
                       className="m-2"
                       type="number"
                       name="pricea"
-                      id="priceInput"
+                      id="priceInputa"
                     />
                   </div>
                   {/* Submit button */}
@@ -486,8 +494,5 @@ export function Admin() {
         </div>
       </main>
     </>
-
   );
 }
- 
-
