@@ -1,5 +1,5 @@
 // hello_algolia.js
-const algoliasearch = require("algoliasearch");
+import algoliasearch from "algoliasearch";
 
 // Connect and authenticate with your Algolia app
 const client = algoliasearch("IQ3WCXN8EY", "7105b4d5717148af2f760824c94b9dcf");

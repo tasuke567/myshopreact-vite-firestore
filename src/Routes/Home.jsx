@@ -134,7 +134,7 @@ export function Home() {
                     className="img-fluid product-thumbnail"
                   />
                   <h3 className="product-title">IPHONE 15 PRO MAX</h3>
-                  <strong className="product-price">$1749.00</strong>
+                  <strong className="product-price">56,900฿</strong>
                   <span className="icon-cross">
                     <img src="images/cross.svg" className="img-fluid" />
                   </span>
@@ -149,7 +149,7 @@ export function Home() {
                     className="img-fluid product-thumbnail"
                   />
                   <h3 className="product-title">Samsung Galaxy S23 Ultra</h3>
-                  <strong className="product-price">$1079.00</strong>
+                  <strong className="product-price">43,990฿</strong>
                   <span className="icon-cross">
                     <img src="images/cross.svg" className="img-fluid" />
                   </span>
@@ -164,7 +164,7 @@ export function Home() {
                     className="img-fluid product-thumbnail"
                   />
                   <h3 className="product-title">OPPO Find N2 Flip</h3>
-                  <strong className="product-price">$808.00</strong>
+                  <strong className="product-price">39,900฿</strong>
                   <span className="icon-cross">
                     <img src="images/cross.svg" className="img-fluid" />
                   </span>
