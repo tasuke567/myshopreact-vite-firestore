@@ -145,7 +145,7 @@ export function Home() {
               <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
                 <a className="product-item" href="/cart">
                   <img
-                    src="images/th-galaxy-s23-s918-sm-s918blibthl-534856828 (1).png"
+                    src="images/Samsung Galaxy S23 Ultra.jpg"
                     className="img-fluid product-thumbnail"
                   />
                   <h3 className="product-title">Samsung Galaxy S23 Ultra</h3>
