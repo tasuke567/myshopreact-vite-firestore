@@ -259,8 +259,6 @@ export function Admin() {
   }
   return (
     <>
-      Admin?
-      <h3>Welcome Admin</h3>
       <link rel="shortcut icon" href="./images/favicon.png" />
       <title>WEY_STORE</title>
       {/* Start Header/Navigation */}
@@ -325,6 +323,7 @@ export function Admin() {
       </nav>
       {/* End Header/Navigation */}
       <title>WEY STORE</title>
+      <h3>Welcome Admin</h3>
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
