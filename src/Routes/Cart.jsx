@@ -12,6 +12,7 @@ export function Cart() {
       console.log(error);
     }
   }
+  
   return (
     <>
       <link rel="shortcut icon" href="./images/favicon.png" />

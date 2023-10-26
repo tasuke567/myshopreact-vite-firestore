@@ -30,6 +30,7 @@ export function Signin() {
       .catch((error) => {
         // Error
         console.log(error);
+        alert(error.message)
       });
   }
   async function handleSignInGG(e) {
@@ -53,6 +54,7 @@ signInWithPopup(auth, provider)
     const email = error.customData.email;
     // The AuthCredential type that was used.
     const credential = GoogleAuthProvider.credentialFromError(error);
+    alert(error.message)
     // ...
   })}
   
