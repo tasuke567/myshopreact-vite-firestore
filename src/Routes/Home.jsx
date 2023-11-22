@@ -120,7 +120,7 @@ export function Home() {
                 </h2>
                 <p className="mb-4"></p>
                 <p>
-                  <a href="./src/shop.html" className="btn">
+                  <a href="/shop" className="btn">
                     เลือกดูสินค้าทั้งหมด
                   </a>
                 </p>

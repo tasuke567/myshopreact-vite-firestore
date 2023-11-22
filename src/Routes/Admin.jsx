@@ -257,6 +257,10 @@ export function Admin() {
       console.log(error);
     }
   }
+  const mystyle = {
+    width: "100px",
+    height: "100px",
+  };
   return (
     <>
       <link rel="shortcut icon" href="./images/favicon.png" />
@@ -336,24 +340,38 @@ export function Admin() {
           <a className="nav-link" href="/home">
             <h2 className="text-center">WEY STORE</h2>
           </a>
-          <div className="container m-lg-5 p-lg-5">
-            <div className="row align-items-center">
-              <div className="col">
-                <img
-                  id="myimgandriod"
-                  src="..."
-                  className="ratio ratio-1x1 "
-                  alt="..."
-                />
-              </div>
-              <div className="col">
-                <img
-                  id="myimgios"
-                  src="..."
-                  className="ratio ratio-1x1  "
-                  alt="..."
-                />
-              </div>
+          <div className="m-lg-5 p-lg-5">
+            <div
+              className="ratio ratio-1x1"
+              style={{
+                width: "18rem",
+                height: "18rem",
+                textAlign: "center",
+                display: "block",
+              }}
+            >
+              <img
+                id="myimgandriod"
+                src="..."
+                alt="..."
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div
+              className="ratio ratio-1x1"
+              style={{
+                width: "18rem",
+                height: "18rem",
+                textAlign: "center",
+                display: "block",
+              }}
+            >
+              <img
+                id="myimgios"
+                src="..."
+                alt="..."
+                style={{ width: "100%", height: "auto" }}
+              />
             </div>
           </div>
           <div id="Modalupdate" className="modal fade">
