@@ -140,7 +140,7 @@ signInWithPopup(auth, provider)
                   </div>
                   <div className="mb-0">
                     <Link Link to="/Signup">
-                      Already yet Account to Sign up
+                      Already have an Account Sign up
                     </Link>
                   </div>
                 </div>

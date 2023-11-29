@@ -106,7 +106,7 @@ export function Signup(){
                     <div>
                       <p className="mb-0">
                         <Link Link to="/signin">
-                          Don't have an account?{" "}
+                          Don't have account yet?{" "}
                         </Link>
                       </p>
                     </div>

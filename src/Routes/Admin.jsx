@@ -297,6 +297,7 @@ export function Admin() {
                   <Link to="/shop">Shop</Link>
                 </a>
               </li>
+              <h3>Welcome Admin</h3>
             </ul>
             <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
               <li>
@@ -327,7 +328,7 @@ export function Admin() {
       </nav>
       {/* End Header/Navigation */}
       <title>WEY STORE</title>
-      <h3>Welcome Admin</h3>
+
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -340,40 +341,7 @@ export function Admin() {
           <a className="nav-link" href="/home">
             <h2 className="text-center">WEY STORE</h2>
           </a>
-          <div className="m-lg-5 p-lg-5">
-            <div
-              className="ratio ratio-1x1"
-              style={{
-                width: "18rem",
-                height: "18rem",
-                textAlign: "center",
-                display: "block",
-              }}
-            >
-              <img
-                id="myimgandriod"
-                src="..."
-                alt="..."
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-            <div
-              className="ratio ratio-1x1"
-              style={{
-                width: "18rem",
-                height: "18rem",
-                textAlign: "center",
-                display: "block",
-              }}
-            >
-              <img
-                id="myimgios"
-                src="..."
-                alt="..."
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
+
           <div id="Modalupdate" className="modal fade">
             <div className="modal-dialog">
               <div className="modal-content">
