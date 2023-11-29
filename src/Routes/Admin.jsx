@@ -271,7 +271,7 @@ export function Admin() {
         arial-label="Furni navigation bar"
       >
         <div className="container">
-          <a className="navbar-brand" href="">
+          <a className="navbar-brand" href="/home">
             WEY<span>.</span>
           </a>
 
