@@ -274,6 +274,7 @@ export function Admin() {
           <a className="navbar-brand" href="">
             WEY<span>.</span>
           </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -287,6 +288,11 @@ export function Admin() {
           </button>
           <div className="collapse navbar-collapse" id="navbarsFurni">
             <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+              <li className="nav-item dropdown">
+                <h3 style={{ color: "white",
+              textAlign:"center" }}>Admin</h3>
+              </li>
+
               <li className="nav-item active">
                 <a className="nav-link" href="">
                   <Link to="/home">Home</Link>
@@ -297,7 +303,6 @@ export function Admin() {
                   <Link to="/shop">Shop</Link>
                 </a>
               </li>
-              <h3>Welcome Admin</h3>
             </ul>
             <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
               <li>
@@ -338,7 +343,7 @@ export function Admin() {
       <link rel="shortcut icon" href="./../images/favicon.png" />
       <main className="container-fluid">
         <div className="container my-3">
-          <a className="nav-link" href="/home">
+          <a className="nav-link">
             <h2 className="text-center">WEY STORE</h2>
           </a>
 
